@@ -1,0 +1,19 @@
+{
+  "name": "course_herbert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build && rm -rf ../server/build && mv build ../server",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "dev": "npm-run-all -p server client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
